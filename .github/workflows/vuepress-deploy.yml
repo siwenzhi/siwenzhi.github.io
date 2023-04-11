@@ -13,5 +13,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: siwenzhi/siwenzhi.github.io
         TARGET_BRANCH: gh_pages
-        BUILD_SCRIPT: npm run docs:build
+        BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
